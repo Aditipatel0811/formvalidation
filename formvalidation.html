@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            <span class="validation-status"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="validation-status"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="validation-status"></span>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span class="validation-status"></span>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+            <input type="date" id="dob" name="dob" required>
+            <span class="validation-status"></span>
+        </div>
+        <button type="submit" id="submit-button" disabled>Submit</button>
+    </form>
+    
+    <script src="formvalidation.js"></script>
+</body>
+</html>
